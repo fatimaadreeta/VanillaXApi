@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Music Player</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <div class="now-playing">
+
+    <div class="head">
+      <div id="chevron">
+        <i class="fa-solid fa-chevron-down"></i>
+      </div>
+      <div id="action">
+        <p>Now Playing</p>
+      </div>
+      <div id="three-dots">
+        <i class="fa-solid fa-ellipsis"></i>
+      </div>
+    </div>
+
+    <div class="audio-image">
+      <img id="image" src="https://m.media-amazon.com/images/I/51AZiDa17fL._UXNaN_FMjpg_QL85_.jpg" alt="">
+    </div>
+
+    <div class="audio-desc">
+      <h1>Happy</h1>
+      <p>Pharrell Williams</p>
+    </div>
+    <audio id="audio-file" src="happy.mp3" type="audio/mpeg"></audio>
+    <div class="controls">
+      <p id="progress-time" class="a">0:00</p>
+      <input type="range" value=0 id="playbar" class="a">
+      <p id="end-time" class="a">4:35</p>
+    </div>
+    <div class="audio-controls">
+      <div><i class="fa-solid fa-backward-step"></i></div>
+      <div id="circled" onclick="pause_play()"><i id="playicon" class="fa-solid fa-play"></i></div>
+      <div><i class="fa-solid fa-forward-step"></i></div>
+    </div>
+
+  </div>
+
+
+  <script src="./scripts/script.js"></script>
+  <!-- <script src="script2.js"></script>-->
+</body>
+
+</html>
